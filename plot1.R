@@ -24,4 +24,6 @@ height <- 480
 GAP <- data$Global_active_power
 xlabel <- "Global Active Power (kilowatts)"
 title <- "Global Active Power"
+png(file = "plot1.png")
 hist(GAP, main = title, xlab = xlabel, xlim = range(0,6), col = "red")
+dev.off()
